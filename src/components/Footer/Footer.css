@@ -1,0 +1,63 @@
+.backgroundFooter {
+  position: relative;
+  padding: 36px 0 36px 0;
+}
+
+.blurBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.6);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; 
+  z-index: 1;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.socialIcons i {
+  margin: 0 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+}
+
+.footerInformation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerInformation img {
+  margin-top: 32px;
+  width: 250px;
+  height: 18px;
+}
+
+.footerInformation p {
+  margin-top: 15px;
+  font-family: var(--text-font);
+  color: var(--primary-color);
+}

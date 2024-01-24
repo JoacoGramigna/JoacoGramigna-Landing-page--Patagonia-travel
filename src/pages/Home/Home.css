@@ -1,0 +1,393 @@
+.backgroundHome {
+  background-image: url("../../assets/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(9, 9, 9, 0.2);
+  background-blend-mode: soft-light;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+.sloganHome {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--title-font);
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0 50px 0 50px;
+  font-size: 50px;
+}
+
+.planeIcon {
+  position: absolute;
+  top: 100vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 1s ease;
+}
+
+.planeIconActive {
+  position: absolute;
+  top: 200vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+  z-index: 2;
+}
+
+.planeImage {
+  width: 80px;
+}
+
+.mainPage {
+  background-color: var(--secondary-color);
+  padding: 56px 5%;
+}
+
+.whyChooseUs {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.whyChooseUs::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--secondary-color);
+  height: 8%;
+}
+
+.whyChooseUs h2 {
+  font-family: var(--title-font);
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.boxCenter {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.box {
+  height: 230px;
+  box-shadow: var(--shadow-elevation-medium);
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 18px 24px;
+}
+
+.box svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.box h3 {
+  font-family: var(--subtitle-font);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.box p {
+  font-family: var(--text-font);
+  text-align: start;
+  margin-top: 18px;
+}
+
+.aboutPatagonia {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 46px;
+  margin: 56px 0;
+}
+
+.infoAboutPatagonia {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.imageAboutPatagonia {
+  background-image: url("../../assets/LagoPatagonia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+.infoPatagonia h2 {
+  font-family: var(--title-font);
+}
+
+.paragraphInfoPatagonia {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
+  padding-left: 50px;
+}
+
+.paragraphInfoPatagonia p {
+  font-family: var(--text-font);
+  width: 75%;
+}
+
+.aboutUs {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 46px;
+  display: flex;
+  margin: 56px 0;
+}
+
+.infoAboutUs {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imageAboutUs {
+  width: 40%;
+  margin-left: 22px;
+}
+
+.infoAboutUs h2 {
+  font-family: var(--title-font);
+  margin-bottom: 30px;
+}
+
+.infoAboutUs p {
+  font-family: var(--text-font);
+  font-size: 16px;
+}
+
+.paragraph0 {
+  margin: 0 0 30px 0;
+}
+
+.paragraph {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.paragraph i {
+  margin-right: 5px;
+}
+
+.moreInfoButton {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  color: var(--primary-color);
+  font-size: 16px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.moreInfoButton:hover {
+  background: var(--tertiary-color);
+}
+
+.image1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/MujerViaje.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  clear: both;
+  margin-bottom: 5px;
+}
+
+.travels {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 46px;
+}
+
+.travelsTitle {
+  font-family: var(--title-font);
+  text-align: center;
+}
+
+.travelCards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  gap: 30px;
+}
+
+.card {
+  width: 240px;
+  height: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.8s ease;
+  border-radius: 5px;
+  flex: 0 0 240px;
+}
+
+.card:hover {
+  transform: scale(105%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: soft-light;
+  transition: all 0.5s ease;
+}
+
+.cardContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.cardContent a {
+  text-decoration: none;
+}
+
+.cardContent h2 {
+  font-family: var(--subtitle-font);
+  color: var(--primary-color);
+}
+
+.cardContent p {
+  font-family: var(--text-font);
+  color: var(--primary-color);
+  margin: 8px 0 40px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.cardContent p:hover {
+  background-color: rgba(0, 145, 255, 0.8);
+  border-radius: 5px;
+}
+
+.card:hover .cardContent {
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+
+@media (max-width: 1300px) {
+  .travelCards {
+    overflow-x: auto;
+    justify-content: unset;
+  }
+  .travelCards::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 5px;
+  }
+
+  .travelCards::-webkit-scrollbar-track {
+    background: rgb(9, 95, 193, 0.1);
+  }
+
+  .travelCards::-webkit-scrollbar-thumb {
+    background: rgb(20, 112, 216);
+    border-radius: 5px;
+  }
+
+  .travelCards::-webkit-scrollbar-thumb:hover {
+    background: rgb(9, 95, 193);
+  }
+}
+
+@media (max-width: 1200px) {
+  .boxCenter {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+  .boxToRight {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  .boxToLeft {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+  }
+  .infoAboutUs {
+    width: 100%;
+  }
+  .imageAboutUs {
+    display: none;
+  }
+  .moreInfoButton {
+    align-self: center;
+  }
+  .infoAboutPatagonia {
+    display: flex;
+    flex-direction: column;
+  }
+  .paragraphInfoPatagonia {
+    padding-left: unset;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .paragraphInfoPatagonia p {
+    width: unset;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 850px) {
+  .boxCenter {
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+  }
+  .box h3 {
+    font-size: 16px;
+  }
+  .box p {
+    font-size: 14px;
+  }
+}
